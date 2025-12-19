@@ -12,8 +12,8 @@ COPY package.json bun.lockb* ./
 COPY apps/web/client/package.json ./apps/web/client/
 COPY apps/web/template/package.json ./apps/web/template/ 2>/dev/null || true
 
-# Install root dependencies
-RUN bun install --frozen-lockfile
+# Install dependencies (without frozen-lockfile to allow lockfile updates)
+RUN bun install
 
 # Copy all source code
 COPY . .
