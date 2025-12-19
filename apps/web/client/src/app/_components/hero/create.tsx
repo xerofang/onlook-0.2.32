@@ -283,15 +283,15 @@ export function Create({ cardKey }: { cardKey: number }) {
                                 )}
                                 placeholder="Paste a link, imagery, or more as inspiration"
                                 value={inputValue}
-                                onChange={(e) => {
+                                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
                                     setInputValue(e.target.value);
                                     adjustTextareaHeight();
                                 }}
                                 onCompositionStart={() => setIsComposing(true)}
-                                onCompositionEnd={(e) => {
+                                onCompositionEnd={() => {
                                     setIsComposing(false);
                                 }}
-                                onKeyDown={(e) => {
+                                onKeyDown={(e: React.KeyboardEvent<HTMLTextAreaElement>) => {
                                     if (e.key === 'Enter' && !e.shiftKey && !isComposing) {
                                         e.preventDefault();
                                         handleSubmit();

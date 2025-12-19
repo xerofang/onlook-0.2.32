@@ -12,7 +12,8 @@ const nextConfig: NextConfig = {
     // TODO: Remove this once we have a proper ESLint and TypeScript config
     eslint: {
         ignoreDuringBuilds: true,
-    }
+    },
+    serverExternalPackages: ['sharp'],
 };
 
 if (process.env.NODE_ENV === 'development') {
