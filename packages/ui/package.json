@@ -55,6 +55,8 @@
     "dependencies": {
         "@onlook/utility": "*",
         "@emotion/react": "^11.13.3",
+        "@types/lodash": "^4.17.13",
+        "lodash": "^4.17.21",
         "@emotion/styled": "^11.13.0",
         "@hookform/resolvers": "^5.0.1",
         "@radix-ui/react-accordion": "^1.2.8",

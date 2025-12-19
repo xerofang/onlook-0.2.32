@@ -36,6 +36,8 @@
         "@onlook/fonts": "*",
         "@onlook/models": "*",
         "browser-image-compression": "^2.0.2",
+        "color-namer": "^1.4.0",
+        "parse-css-color": "^0.2.1",
         "culori": "^4.0.1",
         "free-email-domains": "^1.2.16",
         "is-subdir": "^1.2.0",

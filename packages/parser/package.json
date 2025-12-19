@@ -37,6 +37,7 @@
         "@babel/types": "^7.27.0",
         "@onlook/constants": "*",
         "@onlook/models": "*",
-        "@onlook/utility": "*"
+        "@onlook/utility": "*",
+        "nanoid": "^5.0.9"
     }
 }
