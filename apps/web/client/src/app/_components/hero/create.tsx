@@ -297,24 +297,24 @@ export function Create({ cardKey }: { cardKey: number }) {
                                         handleSubmit();
                                     }
                                 }}
-                                onDragEnter={(e) => {
+                                onDragEnter={(e: React.DragEvent<HTMLTextAreaElement>) => {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     handleDragStateChange(true, e);
                                 }}
-                                onDragOver={(e) => {
+                                onDragOver={(e: React.DragEvent<HTMLTextAreaElement>) => {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     handleDragStateChange(true, e);
                                 }}
-                                onDragLeave={(e) => {
+                                onDragLeave={(e: React.DragEvent<HTMLTextAreaElement>) => {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     if (!e.currentTarget.contains(e.relatedTarget as Node)) {
                                         handleDragStateChange(false, e);
                                     }
                                 }}
-                                onDrop={(e) => {
+                                onDrop={(e: React.DragEvent<HTMLTextAreaElement>) => {
                                     e.preventDefault();
                                     e.stopPropagation();
                                     handleDragStateChange(false, e);
