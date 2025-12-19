@@ -35,6 +35,8 @@
     "dependencies": {
         "@babel/standalone": "^7.27.0",
         "@babel/types": "^7.27.0",
-        "@onlook/models": "*"
+        "@onlook/constants": "*",
+        "@onlook/models": "*",
+        "@onlook/utility": "*"
     }
 }
