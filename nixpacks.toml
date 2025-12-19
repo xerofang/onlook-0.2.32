@@ -1,0 +1,14 @@
+# Nixpacks configuration for Coolify deployment
+# This fixes the frozen-lockfile error and missing dependencies
+
+[phases.setup]
+nixPkgs = ["bun", "nodejs"]
+
+[phases.install]
+cmds = ["bun install"]
+
+[phases.build]
+cmds = ["bun run build"]
+
+[start]
+cmd = "bun run start"
