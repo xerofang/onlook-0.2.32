@@ -328,7 +328,7 @@ export function Create({ cardKey }: { cardKey: number }) {
                             <div className="flex flex-row justify-start gap-1.5">
                                 <Tooltip
                                     open={imageTooltipOpen && !isHandlingFile}
-                                    onOpenChange={(open) =>
+                                    onOpenChange={(open: boolean) =>
                                         !isHandlingFile && setImageTooltipOpen(open)
                                     }
                                 >
